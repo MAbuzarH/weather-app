@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Home() {
   const apiKey = "d7e158e619fd24009922ef9a5e8df48e";
   const [city, setCity] = useState("");
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData, setWeatherData]:any = useState(null);
   const [error, setError] = useState(null);
 
   const fetchWeatherData = async () => {
